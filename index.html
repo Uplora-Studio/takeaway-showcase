@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Mozzarella | Home</title>
+	<title>Takeaway Showcase | Shropshire Demo</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/tooltipster.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
@@ -442,7 +442,7 @@
 			    </div>
 			</div>
 			<!--/PLAY-->
-			<iframe src="http://player.vimeo.com/video/109558222"></iframe>
+			<iframe src="https://player.vimeo.com/video/109558222" title="Showcase video" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 		</section>
 		<!--/VIDEO-->
 
@@ -586,9 +586,10 @@
 		<section id="contact">
 			<img src="images/title-detail.png" alt="title-detail">
 			<h2>Contact Us</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p>This contact section is set up as a showcase only. For a live launch, connect Formspree, Netlify Forms, or your own backend so enquiries come through properly.</p>
 			<hr>
 			<form>
+				<p class="form-note">Showcase mode only: this form now gives a friendly demo confirmation instead of trying to send to a missing PHP file.</p>
 				<input type="text" id="name" name="name" placeholder="Write your full name here...">
 				<input type="email" id="email" name="email" placeholder="Write your email adress here...">
 				<textarea id="message" name="message" placeholder="Write your message here..."></textarea>
@@ -626,7 +627,18 @@
 		<!--/CONTACT-->
 
 		<!--MAP-->
-		<section id="map"></section>
+		<section id="map">
+			<iframe
+				title="Shropshire map"
+				src="https://www.openstreetmap.org/export/embed.html?bbox=-3.55%2C52.20%2C-2.00%2C53.15&layer=mapnik&marker=52.706%2C-2.755"
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<div class="map-card">
+				<h3>Shropshire Showcase Area</h3>
+				<p>This demo map now uses OpenStreetMap, so it works on GitHub Pages without a Google Maps API key.</p>
+				<p>Centered around Shrewsbury, covering the wider Shropshire area for a local showcase feel.</p>
+			</div>
+		</section>
 		<!--/MAP-->
 
 		<!--FOOTER-->
@@ -637,9 +649,9 @@
 					<h5>About Mozzarella</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do re eiusmod tempor incididunt ut labore et dolore magna porem ed ipsum dolor sit amet, consectetur. Do re eiusmod tempor incididunt ut labore et dolore magna porem ed ipsum dolor sit amet, consectetur.</p>
 					<ul class="c-info">
-						<li>Fake street 123 - Springfield, USA</li>
-						<li>inquiries@mozzarellabar.com</li>
-						<li>(+044) 555 - 123 - 1234 / 35</li>
+						<li>Shropshire, United Kingdom</li>
+						<li>hello@takeaway-showcase.demo</li>
+						<li>Local delivery showcase only</li>
 					</ul>
 				</article>
 				<!--/ABOUT MOZZARELLA-->
@@ -739,7 +751,7 @@
 			</section>
 			<div id="copy-wrap">
 			<section id="copy">
-				<h5><span>Mozzarella Theme 2014 |</span> All Rights Reserved</h5>
+				<h5><span>Takeaway Showcase Demo |</span> Static GitHub Pages Version</h5>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -774,10 +786,6 @@
 <script src="js/contact.js"></script>
 <!-- Subscribe -->
 <script src="js/subscribe.js"></script>
-<!-- Google Maps API -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<!-- Google Maps Config -->
-<script src="js/gmaps.js"></script>
 <script>
 $(function() {
 	/*-----------------

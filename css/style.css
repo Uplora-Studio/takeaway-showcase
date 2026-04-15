@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
-@import url(http://fonts.googleapis.com/css?family=Kameron);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+@import url(https://fonts.googleapis.com/css?family=Kameron);
 /*----------------------------------------------------------------
 [Table of contents]
 
@@ -3348,5 +3348,110 @@ footer #copy > nav > ul > li > a:hover {
 
 	#comments > ul > li.response {
 		margin-left: 30px;
+	}
+}
+
+/* =======================================
+   2026 showcase fixes for GitHub Pages
+======================================= */
+header ul.main-slider li.first {
+	background: linear-gradient(135deg, rgba(15,15,15,.50), rgba(15,15,15,.20)), linear-gradient(135deg, #ffb11c, #f38b00);
+}
+
+header ul.main-slider li.second {
+	background: linear-gradient(135deg, rgba(15,15,15,.58), rgba(15,15,15,.28)), linear-gradient(135deg, #111111, #3a3a3a);
+}
+
+header ul.main-slider li.third {
+	background: linear-gradient(135deg, rgba(15,15,15,.52), rgba(15,15,15,.18)), linear-gradient(135deg, #c96d00, #ffb21a);
+}
+
+#shows-wrap {
+	background: linear-gradient(135deg, rgba(255,168,0,.94), rgba(226,135,0,.94));
+}
+
+#video {
+	background: linear-gradient(135deg, #151515, #2a2a2a);
+}
+
+#news {
+	background: linear-gradient(135deg, #ffb51b, #f09000);
+}
+
+#shows > article > p,
+#video > p,
+#video > h2,
+#news > p,
+#news > h4 {
+	text-shadow: 0 1px 2px rgba(0,0,0,.18);
+}
+
+#shows > article > p + p {
+	color: #fff4d2;
+}
+
+#contact .form-note {
+	width: 100%;
+	margin: 0 0 18px;
+	padding: 12px 14px;
+	background: #fff7e8;
+	border: 1px solid #ffd385;
+	border-radius: 8px;
+	font-size: 13px;
+	line-height: 1.5;
+	color: #5f4a20;
+	text-align: left;
+}
+
+#map {
+	position: relative;
+	height: 530px;
+	overflow: hidden;
+	background: #e8ecef;
+}
+
+#map > iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	display: block;
+}
+
+#map .map-card {
+	position: absolute;
+	top: 32px;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 480px;
+	padding: 18px 22px;
+	background: rgba(20,20,20,.86);
+	color: #fff;
+	border: 1px solid rgba(255,255,255,.10);
+	border-radius: 12px;
+	box-shadow: 0 12px 30px rgba(0,0,0,.18);
+	text-align: center;
+}
+
+#map .map-card h3 {
+	font-size: 1.6em;
+	color: #ffb11c;
+	margin-bottom: 8px;
+}
+
+#map .map-card p {
+	margin: 0 0 6px;
+	color: #f5f5f5;
+}
+
+#map .map-card p:last-child {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+	#map .map-card {
+		width: calc(100% - 32px);
+		left: 16px;
+		right: 16px;
+		transform: none;
 	}
 }

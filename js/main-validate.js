@@ -45,8 +45,8 @@ function ctcValidation() {
 
 // Validate Subscribe
 var subsButton = document.getElementById('subs');
-subsButton.onclick = subsValidation;
+if (subsButton) subsButton.onclick = subsValidation;
 
 // Validate Contact
 var ctcButton = document.getElementById('ctc');
-ctcButton.onclick = ctcValidation;
+if (ctcButton) ctcButton.onclick = ctcValidation;
