@@ -1,0 +1,297 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #f6f7fb;
+  background: #111827;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.topbar,
+.card,
+.cart-drawer {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  padding: 20px 24px;
+  border-radius: 24px;
+  margin-bottom: 24px;
+}
+
+.topbar h1,
+.hero h2,
+.section-heading h2,
+.login-section h2,
+.cart-header h2,
+.menu-card h3,
+.cart-item h3,
+.hero-panel h3 {
+  margin: 0;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav-link,
+.cart-button,
+.primary-button,
+.secondary-button,
+.close-button,
+.quantity-controls button,
+.full-width {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 16px;
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+}
+
+.nav-link,
+.secondary-button,
+.close-button,
+.quantity-controls button {
+  background: rgba(255, 255, 255, 0.08);
+  color: #f8fafc;
+}
+
+.nav-link.active,
+.primary-button,
+.cart-button,
+.full-width {
+  background: #f97316;
+  color: #fff7ed;
+}
+
+.page-content {
+  display: grid;
+  gap: 24px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 28px;
+}
+
+.hero-copy {
+  max-width: 56ch;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.hero-panel {
+  border-radius: 20px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.hero-panel ul {
+  margin: 16px 0 0;
+  padding-left: 20px;
+}
+
+.eyebrow,
+.pill,
+.status-message,
+.section-heading p:last-child,
+.cart-item p {
+  color: #cbd5e1;
+}
+
+.eyebrow,
+.pill {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: end;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.menu-card,
+.login-section {
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.menu-card-footer,
+.cart-header,
+.cart-total,
+.cart-item,
+.quantity-controls,
+.account-panel {
+  display: flex;
+  align-items: center;
+}
+
+.menu-card {
+  display: grid;
+  gap: 16px;
+}
+
+.menu-card-footer,
+.cart-header,
+.cart-total,
+.cart-item {
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.login-section,
+.login-form {
+  display: grid;
+  gap: 18px;
+}
+
+.login-form label {
+  display: grid;
+  gap: 8px;
+}
+
+.login-form input {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: #f8fafc;
+  padding: 12px 14px;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(420px, 100%);
+  height: 100vh;
+  padding: 24px;
+  border-radius: 24px 0 0 24px;
+  transform: translateX(100%);
+  transition: transform 0.25s ease;
+  z-index: 20;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+}
+
+.cart-drawer.open {
+  transform: translateX(0);
+}
+
+.cart-items {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.cart-item {
+  padding: 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.quantity-controls {
+  gap: 10px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.empty-state {
+  color: #cbd5e1;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  border: 0;
+  background: rgba(15, 23, 42, 0.6);
+  z-index: 10;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 860px) {
+  .app-shell {
+    padding: 20px;
+  }
+
+  .topbar,
+  .hero,
+  .section-heading {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topbar {
+    padding: 20px;
+  }
+
+  .hero {
+    padding: 24px;
+  }
+
+  .cart-drawer {
+    border-radius: 20px 0 0 20px;
+  }
+}
