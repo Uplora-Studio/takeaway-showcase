@@ -467,9 +467,9 @@ header > figure > img[alt='Mozzarella-logo'] {
 		display: none;
 	}
 
-	#main-nav > ul > li:nth-child(3),
-	#main-nav > ul > li:nth-child(4) {
+	#main-nav > ul > li:nth-child(3) {
 		float: right;
+		margin-right: 200px;
 	}
 
 	#main-nav > ul > li > a {
